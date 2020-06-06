@@ -1,0 +1,37 @@
+body {
+    background-image: url('../img/dance.gif');
+    background-size: cover;
+}
+
+#center-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, li {
+  text-align: center;
+  color: white;
+  font-family: "Georgia"
+}
+
+li {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#header {
+  font-size: 30px;
+}
