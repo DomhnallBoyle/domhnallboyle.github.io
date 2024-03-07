@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/dance.gif');
+    background-image: url('../img/background.gif');
     background-size: cover;
 }
 
@@ -9,6 +9,9 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  padding: 5%;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 ul {
@@ -20,11 +23,12 @@ ul {
 h1, li {
   text-align: center;
   color: white;
-  font-family: "Georgia"
+  font-family: "Ubuntu"
 }
 
 li {
   font-size: 20px;
+  padding-top: 5px;
 }
 
 a {
@@ -33,5 +37,5 @@ a {
 }
 
 #header {
-  font-size: 30px;
+  font-size: 40px;
 }
