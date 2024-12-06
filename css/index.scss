@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 
-$duration: 16s;
-//$duration: 0s;
+$duration: 15s;
 
 $grey: #616A92;
 $dark: #323641;
@@ -24,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-.screen {
+.splashscreen {
   width: 100%;
   padding-top: 75%;
   position: relative;
@@ -146,7 +145,7 @@ body {
   //opacity: 0;
 }
 
-.screen .content {
+.splashscreen .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -317,4 +316,62 @@ body {
 
 .is-small {
   font-size: .3em;
+}
+
+.menu {
+  width: 95vw;
+  height: 95vh;
+  background-color: blue;
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+  opacity: 1;
+  animation-name: fade-in;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.menu img {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.menu a {
+  color: gray;
+  position: relative;
+  z-index: 100;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+.menu .list {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  text-align: center;
+}
+
+.menu .footer {
+  position: absolute;
+  background-color: black;
+  width: 95%;
+  height: 20%;
+  top: 80%;
+  z-index: 101;
 }

@@ -3,7 +3,7 @@ link(href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="style
 link(href="css/index.css", rel="stylesheet")
 link(rel="icon" href="img/icon.png")
 
-.screen
+.splashscreen
   .content
     p.copyright Domhnall's Portfolio
     p.branding Welcome
@@ -22,5 +22,14 @@ link(rel="icon" href="img/icon.png")
           .left
           .right
       - n++
+
+.menu 
+    img(src="img/menu.gif")
+    .list
+        a(href="https://github.com/DomhnallBoyle?tab=repositories", target="_blank", style="text-decoration:none") Personal Projects <br>
+        a(href="https://drive.google.com/file/d/1y8jO4PgUhOE52w8B3Iu9i7CmnN7mAZYA/view?usp=sharing", target="_blank", style="text-decoration:none") Research <br>
+        a(href="https://www.youtube.com/watch?v=qRfifZNn9qQ", target="_blank", style="text-decoration:none") Speech Recovery Demo <br>
+        a Blog
+    .footer
 
 script(src='js/home.js')
