@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    font-family: 'Play'
+}
+
+.menu {
+    width: 95vw;
+    height: 95vh;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.menu img {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+
+.menu a {
+    color: gray;
+    position: relative;
+    z-index: 100;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.menu .inner {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    text-align: center;
+}
+
+.menu .footer {
+    position: absolute;
+    background-color: black;
+    width: 95%;
+    height: 20%;
+    top: 80%;
+    z-index: 101;
+}
