@@ -19,7 +19,6 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  font-family: 'Play', sans-serif;
   overflow: hidden;
 }
 
@@ -34,7 +33,7 @@ body {
 }
 .inner {
   .inner-bg {
-    background-image:   url(https://res.cloudinary.com/dhpaysqxb/image/upload/v1568580561/nebula_prju57.png);
+    background-image: url("../img/nebula.png");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -156,6 +155,11 @@ body {
   background: transparent;
   z-index: 200;
   animation: content $duration infinite;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
   .branding, .copyright {
     position: absolute;
     left: 50%;
@@ -163,7 +167,7 @@ body {
     transform: translate(-50%, -50%);
   }
   .copyright {
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-shadow: black 0px 0px 3px;
     opacity: 0;
     animation: copyright $duration linear infinite;
@@ -314,14 +318,10 @@ body {
   }
 }
 
-.is-small {
-  font-size: .3em;
-}
-
 .menu {
   width: 95vw;
   height: 95vh;
-  background-color: blue;
+  background-color: black;
   overflow: hidden;
   display: none;
   visibility: hidden;
@@ -343,12 +343,14 @@ body {
 
 .menu img {
   position: absolute;
-  width: 95%;
-  height: 95%;
+  left: 40%;
+  top: 35%;
+  transform: scale(3);
   overflow: hidden;
 }
 
 .menu a {
+  font-family: 'Play', sans-serif;
   color: gray;
   position: relative;
   z-index: 100;
@@ -365,13 +367,4 @@ a:hover {
   left: 50%;
   top: 40%;
   text-align: center;
-}
-
-.menu .footer {
-  position: absolute;
-  background-color: black;
-  width: 95%;
-  height: 20%;
-  top: 80%;
-  z-index: 101;
 }
